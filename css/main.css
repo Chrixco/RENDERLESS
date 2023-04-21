@@ -1,0 +1,236 @@
+/* Set background image */
+body {
+	margin: 0;
+    font-family: "Montserrat", sans-serif;
+}
+
+
+/* Set color and font for headings */
+h1, h3 {
+	color: rgb(0, 0, 0);
+	font-family: Arial, sans-serif;
+	text-align: center;
+}
+
+/* Set styles for navigation bar */
+.navbar {
+	background-color: rgb(0, 0, 0);
+	display: none;
+}
+
+.navbar-brand {
+	color: black;
+	font-weight: bold;
+	font-size: 1.5rem;
+}
+
+.nav-link {
+	color: black;
+	font-weight: bold;
+}
+
+/* Set styles for button group */
+.btn-group {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.btn-primary {
+	background-color: black;
+	border-color: black;
+	font-weight: bold;
+}
+
+/* Set styles for social media icons */
+.social-media {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.social-media a {
+	margin: 0 10px;
+	background-color: #CCCCCC;
+	color: rgb(0, 0, 0);
+}
+
+.social-media a:hover {
+	color: #000000;
+}
+
+/* Set styles for footer */
+footer {
+	background-color: #CCCCCC;
+	color: black;
+	text-align: center;
+	padding: 10px;
+	font-size: 0.8rem;
+}
+
+.container-padding {
+	padding-top: 10%;
+	padding-bottom: 10%;
+	padding-left: 5%;
+	padding-right: 5%;
+}
+
+.btn-lg-custom {
+    font-size: 1.5rem;
+    line-height: 1.5;
+    border-radius: 1.3rem;
+    padding: 1rem 2rem;
+    margin: 0 0.6rem;
+}
+
+/*Container image in the background*/
+.containerImg {
+	position: relative;
+	height: 100vh;
+	background-size: cover;
+	background-position: center;
+}
+
+.text-overlay {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	background-color: rgba(255, 255, 255, 0.8);
+	padding: 20px;
+	border-radius: 10px;
+}
+
+.text-overlay h2 {
+	font-size: 2rem;
+	margin: 0;
+}
+
+.backgroundImage {
+    background-image: url('img/chrixco9_isometric_drawing_black_and_white_very_realistic_build_ed760d30-b37c-4af8-baa8-39e16a4a9672.png');
+    background-size: cover;
+	background-position: center;
+	position: relative;
+    z-index: -1;
+}
+.background__container {
+	position: absolute;
+	height: 700px;
+	width: 100%;
+	overflow: hidden;
+	z-index: -1;
+  }
+
+  .background__top {
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	z-index: -1;
+	background: #ffffff;
+	transition: background-color 1s linear;
+  }
+
+.expanded {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 9999;
+  }
+/*Buttons change color and text*/
+.btn-custom {
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    transition: all 0.5s ease;
+}
+
+.btn-custom:hover {
+    background-color: yellow;
+    color: rgb(0, 0, 0);
+}
+
+.btn-customContact {
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    transition: all 0.5s ease;
+}
+
+.btn-customContact:hover {
+    background-color: rgb(250, 162, 0);
+    color: rgb(0, 0, 0);
+}
+
+/*Line full width*/
+.line {
+	position: felx;
+	top: 50%;
+	padding: 0 50px;
+	font-size: 20px;
+	text-align: center;
+	margin: 0;
+	width: 66%;
+	color: rgb(0, 0, 0);
+	background-color: rgb(250, 162, 0);
+	user-select: none;
+
+  }
+.carousel-item img {
+	max-width: 600px;
+	max-height: 600px;
+	align-items: center;
+  }
+
+  .containerDown {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 5%;
+	padding-top: 5%;
+}
+
+.containerCenter {
+	width: 100%;
+	text-align: center;
+	
+	}
+
+	.containerRight{
+		width: 100%;
+		text-align: right;
+		
+		}
+
+  .textP{
+	position: flex;
+	top: 50%;
+	padding: 0 2rem;
+	font-size: 1.25rem;
+	text-align: center;
+	margin: 0;
+	width: 100%;
+	padding-top: 2rem;
+	padding-bottom: 2rem;
+	}
+
+	.text-center {
+		text-align: center;
+	}
+	
+	.text-right {
+		text-align: right;
+	}
+	
+	.text-white {
+		color: #fff;
+	}
+
+@media screen and (max-width: 480px) {
+	.textP480 {
+	font-size: 32px;
+	padding: 0 20px;
+	}
+	}
+	

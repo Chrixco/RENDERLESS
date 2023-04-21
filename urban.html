@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>My Webpage</title>
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<!-- Custom CSS -->
+	<link rel="stylesheet" href="E:\Promotion\Portolio web\css\main.css">
+	<!-- Link to Font Awesome CSS -->
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-JhoB4MGn+uZIc+UOo/qZzVHdSDlQ1zV9ACa8yuk6G2eOoI/+5q5xRUmpZU6NUKv6" crossorigin="anonymous">
+	<!-- Link to Font Awesome JS -->
+	<script src="https://use.fontawesome.com/releases/v5.15.3/js/all.js" integrity="sha384-ULsMtyhWLpSWKhja/YmD2QsNT8TtYrsktTcxhjJgXtWqbE8PvMh/hOw21jK64KKW" crossorigin="anonymous"></script>
+    <script src="JS\main.js"></script>
+</head>
+<body>
+	<nav class="navbar navbar-expand-md navbar-light bg-light navbar-expand-sm">
+		<a class="navbar-brand" href="E:\Promotion\Portolio web\index.html">Portfolio | Christian CB</a>
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+		<div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+			<ul class="navbar-nav">
+				<li class="nav-item">
+					<a class="nav-link" href="E:\Promotion\Portolio web\art.html">Art</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="https://chrixco.github.io/Proyectualst.github.io/">Architecture</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="photo.html">Photography</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="info.html">Info</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="contact.html">Contact</a>
+				</li>
+			</ul>
+		</div>
+	</nav>
+	<div class="container">
+		<div class="text-center container-padding" style="">
+			<h1>Art</h1>
+			<section>
+                <div class="container">
+                  <h2>Image Gallery</h2>
+                  <div class="row">
+                    <div class="col-md-4 mb-3">
+                      <img src="img\chrixco9_isometric_drawing_black_and_white_very_realistic_build_ed760d30-b37c-4af8-baa8-39e16a4a9672.png" alt="Image 1" class="img-fluid ">
+                    </div>
+                    <div class="col-md-4 mb-3">
+                      <img src="img\chrixco9_isometric_drawing_black_and_white_very_realistic_build_ed760d30-b37c-4af8-baa8-39e16a4a9672.png" alt="Image 2" class="img-fluid ">
+                    </div>
+                    <div class="col-md-4 mb-3">
+                      <img src="img\chrixco9_isometric_drawing_black_and_white_very_realistic_build_ed760d30-b37c-4af8-baa8-39e16a4a9672.png" alt="Image 3" class="img-fluid ">
+                    </div>
+                    <div class="col-md-4 mb-3">
+                      <img src="img\chrixco9_isometric_drawing_black_and_white_very_realistic_build_ed760d30-b37c-4af8-baa8-39e16a4a9672.png" alt="Image 4" class="img-fluid ">
+                    </div>
+                    <div class="col-md-4 mb-3">
+                      <img src="img\chrixco9_isometric_drawing_black_and_white_very_realistic_build_ed760d30-b37c-4af8-baa8-39e16a4a9672.png" alt="Image 5" class="img-fluid ">
+                    </div>
+                  </div>
+                </div>
+              </section>
+            </div>
+            <script>
+                const images = document.querySelectorAll('.expanded');
+        
+                images.forEach((image) => {
+                    image.addEventListener('click', () => {
+                        image.classList.toggle('expanded');
+                    });
+                });
+            </script>
+            <div class="text-center mt-5">
+                <a href="https://chrixco.github.io/Proyectualst.github.io/" class="btn btn-primary btn-lg-custom">Architecture</a>
+				<a href="E:\Promotion\Portolio web\art.html" class="btn btn-primary btn-lg-custom">Art</a>
+                <a href="photo.html" class="btn btn-primary btn-lg-custom">Photography</a>
+            </div>
+		</div>
+			<div class="container">
+            <div class="social-media text-center mt-5">
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+                <a href="#"><i class="fab fa-youtube"></i></a>
+            </div>
+        </div>
+        <!-- Bootstrap JS and jQuery -->
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+        <!-- Font Awesome -->
+        <script src="https://kit.fontawesome.com/your-key.js" crossorigin="anonymous"></script>
+        
+	</body>
+	</html>
