@@ -6,9 +6,9 @@
 	    img {
             display: block;
             margin: 0 auto;
-            max-width: 30%;
+            max-width: 80%;
             height: auto;
-            padding-top: 20%;
+            padding-top: 10%;
             animation-name: breathe;
             animation-duration: 2.6s;
             animation-timing-function: ease-in-out;
@@ -31,56 +31,47 @@
 	    
 	    @media screen and (max-width: 768px) {
 	        img {
-	            max-width: 50%;
+	            max-width: 80%;
 	        }
 	    }
 	    
 	    @media screen and (max-width: 480px) {
 	        img {
-	            max-width: 60%;
+	            max-width: 80%;
 	        }
 	    }
+
+		body {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			height: 100vh;
+			margin: 0;
+		  }
+		  
+		  #logo {
+			position: relative;
+			z-index: 1;
+		}
+		
+		  
+		  video {
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+			z-index: -99;
+		  }
 	</style>
 </head>
 <body>
-	<a href="index.html"><img id="logo" src="img\Artboard 1.png"></a>
+	<a href="index.html"><img id="logo" src="img\Artboard_whiterosa.png"></a>
 
-	<script>
-		var logo = document.getElementById("logo");
-		var filter = document.querySelector("#liquify feTurbulence");
-		var scale = 50;
-
-		function handleMouseMove(event) {
-			var mouseX = event.clientX;
-			var mouseY = event.clientY;
-			var logoRect = logo.getBoundingClientRect();
-			var logoX = logoRect.left;
-			var logoY = logoRect.top;
-			var logoWidth = logoRect.width;
-			var logoHeight = logoRect.height;
-
-			if (mouseX >= logoX && mouseX <= logoX + logoWidth &&
-				mouseY >= logoY && mouseY <= logoY + logoHeight) {
-
-				var baseFrequency = (mouseX - logoX) / logoWidth;
-				filter.setAttribute("baseFrequency", baseFrequency + " " + baseFrequency);
-			} else {
-				filter.setAttribute("baseFrequency", "0 0");
-			}
-		}
-        
-		logo.addEventListener("mousemove", handleMouseMove);
-	</script>
-
-	<svg xmlns="http://www.w3.org/2000/svg" version="1.1" height="0">
-	  <defs>
-	    <filter id="liquify">
-            <feTurbulence id="liquifyNoise" type="turbulence" baseFrequency="0 0" numOctaves="3" result="liquifyMap" />
-            <feDisplacementMap xChannelSelector="R" yChannelSelector="G" in="SourceGraphic" in2="liquifyMap" scale="${scale}" />
-          </filter>
-          
-        
-	  </defs>
-	</svg>
+	<video autoplay loop muted>
+        <source src="img\AdobeStock_513634765.mov" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
 </body>
 </html>
