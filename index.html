@@ -3,61 +3,68 @@
 	<head>
 	<!-- Bootstrap CSS -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-	<!-- Custom CSS -->
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-DvWaR+p6Ftrv1TLq4WJ6/WL4gGJQ6vA8kIIWTSaBgrmdlMn1C2wYT8yJ1n2HgXiS" crossorigin="anonymous">
+
+    <!-- Custom CSS -->
 	<link rel="stylesheet" href="css\main.css">
 </head>
 <body class="text-white ">
-	<video autoplay loop muted>
-        <source src="img\AdobeStock_513634765.mov" type="video/mp4">
+    
+	
+
+    <video autoplay loop muted>
+        <source src="img/Sequence blue.mp4" type="video/mp4">
         Your browser does not support the video tag.
     </video>
-	<!-- Navbar -->
+
+      
+      
+      
+      
+      
+    
+	<!-- Navbar-->
 <!-- Navbar-->
 <div class="text-center mt-5">
-	<a class="navbar-brand text-left text-white " href="logo.html">RENDERless</a>
-	<a href="#" class="btn btn-custom btn-lg">Download</a>
-	<a href="#" class="btn btn-custom btn-lg">Pricing</a>
+	<a class="navbar-brand text-left text-white featurette-heading" href="logo.html">RENDERless</a>
+	<a href="donwload.html" class="btn btn-custom btn-lg">Download</a>
+	<a href="pricing.html" class="btn btn-custom btn-lg">Pricing</a>
 	<a href="#" class="btn btn-custom btn-lg">Galerie</a>
 	<a href="#" class="btn btn-custom btn-lg">Info</a>
 	<a href="#" class="btn btn-custom btn-lg">Invest-In</a>
-	<a href="#" class="btn btn-custom btn-lg">Contact</a>
+	<a href="contact.html" class="btn btn-custom btn-lg">Contact</a>
 </div>
 </nav>
 <!--End Navbar-->
-  <!-- End Navbar -->
+  <!-- Javascript for open img -->
+  <script></script>
   
   
 
 <!-- START THE FEATURETTES -->
 <hr class="featurette-divider bg-white">
-<div class="row featurette">
+<div class="row featurette clickable" data-href="donwload.html">
     <div class="col-md-7">
         <div class="context has-text-centered unstyled"></div>
-        <h2 class="featurette-heading fw-normal lh-1 text-right ">#NOMORERENDERINGS: Architecture</h2>
-        <p class="lead text-right ">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        <h2 class="featurette-heading fw-normal lh-1 text-right" target="donwload.html">
+            <a href="donwload.html">#NOMORERENDERINGS: Architecture</h2></a>
+        <p class="lead text-right">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 
     </div>
+
+
     <div class="col-md-5">
-        <img src="img\chrixco9_a_raw_photo_of_inspiring_modern_architecture_in_a_wate_13de9b93-0529-4cd0-8828-80d305ce9c71.png" 
-        class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" alt="Inspiring modern architecture in a water" role="img" aria-label="Inspiring modern architecture in a water">
-      </div>
+        <a href="donwload.html" target="_blank">
+        <img src="img/chrixco9_a_raw_photo_of_inspiring_modern_architecture_in_a_wate_13de9b93-0529-4cd0-8828-80d305ce9c71.png" 
+        class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto clickable" 
+        width="500" height="500" alt="Inspiring modern architecture in a water" 
+        role="img" aria-label="Inspiring modern architecture in a water" 
+        data-href="download.html">
+        </a>
+    </div>
 </div>
 <!-- /END THE FEATURETTES -->
 
-<!-- START THE FEATURETTES -->
-<hr class="featurette-divider bg-white">
-<div class="row featurette">
-    <div class="col-md-7">
-        <h2 class="featurette-heading fw-normal lh-1 text-right">#NOMORERENDERINGS: Urbanism and Landscape Design</h2>
-        <p class="lead text-right">Some great placeholder content for the first featurette here. Imagine some exciting prose here.</p>
-    </div>
-    <div class="col-md-5">
-        <img src="img\chrixco9_a_competition_plan_of_landscape_proposal_that_is_inspi_fa43ae17-a288-4c5d-81b7-d28374d3ce7d.png" 
-        class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" alt="Inspiring modern architecture in a water" role="img" aria-label="Inspiring modern architecture in a water">
-      </div>
-      
-</div>
-<!-- /END THE FEATURETTES -->
 
 <!-- START THE FEATURETTES -->
 <hr class="featurette-divider bg-white">
@@ -78,19 +85,30 @@
     <div class="container-padding">
         <h3 class="text-white">Contact</h3>
         <p>For questions please contact us.</p>
-        <a class="text-white" href="mailto:info@renderless.com">Send e-mail to Renderless</a>
+        <a class="text-white" href="mailto:info@renderless.com">Send e-mail to info@renderless.com</a>
 
     </div>
 
 	<div class="container">
-		<div class="social-media text-center mt-5">
-			<a href="#"><i class="fab fa-facebook"></i></a>
-			<a href="#"><i class="fab fa-twitter"></i></a>
-			<a href="#"><i class="fab fa-instagram"></i></a>
-			<a href="#"><i class="fab fa-linkedin"></i></a>
-			<a href="#"><i class="fab fa-youtube"></i></a>
-		</div>
-	</div>
-
+        <div class="social-media text-center mt-5">
+            <a href="#" class="text-white me-3"><i class="fab fa-facebook"></i></a>
+            <a href="#" class="text-white me-3"><i class="fab fa-twitter"></i></a>
+            <a href="#" class="text-white me-3"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="text-white me-3"><i class="fab fa-linkedin"></i></a>
+            <a href="#" class="text-white"><i class="fab fa-youtube"></i></a>
+        </div>
+    </div>
+    
+    <footer class="footer bg-light py-3">
+        <div class="container">
+          <span class="text-muted">© RENDERless. All rights reserved. <span id="currentYear"></span></span>
+        </div>
+      </footer>
+      
+      <script>
+        document.getElementById("currentYear").innerHTML = new Date().getFullYear();
+      </script>
+      
+      
 </body>
 </html>
