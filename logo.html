@@ -1,13 +1,12 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Your Website Title Here</title>
+	<title>RENDERless</title>
 	<style>
 	    img {
             display: block;
             margin: 0 auto;
-            max-width: 80%;
-            height: auto;
+            max-width: 90%;
             padding-top: 10%;
             animation-name: breathe;
             animation-duration: 2.6s;
@@ -19,27 +18,16 @@
 	    
         img:hover {
             transform: scale(1.1) rotate(10deg);
-            opacity: 0.5;
+            opacity: 1;
             color: blue;
           }
 
 	    @keyframes breathe {
-            0% { transform: scale(1); opacity: 0.6; }
+            0% { transform: scale(1); opacity: 0.8; }
             50% { transform: scale(1.1); opacity: 1; }
-            100% { transform: scale(1); opacity: 0.6; }
+            100% { transform: scale(1); opacity: 0.8; }
 	    }
-	    
-	    @media screen and (max-width: 768px) {
-	        img {
-	            max-width: 80%;
-	        }
-	    }
-	    
-	    @media screen and (max-width: 480px) {
-	        img {
-	            max-width: 80%;
-	        }
-	    }
+
 
 		body {
 			display: flex;
@@ -64,14 +52,17 @@
 			object-fit: cover;
 			z-index: -99;
 		  }
+
 	</style>
 </head>
 <body>
-	<a href="index.html"><img id="logo" src="img\Artboard_whiterosa.png"></a>
+	
 
 	<video autoplay loop muted>
-        <source src="img\AdobeStock_513634765.mov" type="video/mp4">
+        <source src="img/sketch.mp4" type="video/mp4">
         Your browser does not support the video tag.
     </video>
+
+	<a href="index.html"><img id="logo" src="img/logo renderless sin texto con helvetica.png"></a>
 </body>
 </html>
