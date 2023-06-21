@@ -25,6 +25,16 @@
             location.replace(`https:${location.href.substring(location.protocol.length)}`);
         }
     </script>
+</head>
+<body>
+    <!-- Rest of your HTML content --> 
+    
+    <!-- Enable HTTPS encryption -->
+    <script>
+        if (location.protocol !== 'https:') {
+            location.replace(`https:${location.href.substring(location.protocol.length)}`);
+        }
+    </script>
     
     <style>
         @media (max-width: 767px) {
@@ -42,13 +52,28 @@
         Your browser does not support the video tag.
     </video>   
 
-    <!-- Navbar -->
-    <div class="text-center mt-5">
-        <a class="navbar-brand text-left text-white featurette-heading" href="index.html">RENDERLESS</a>
-        <a href="sketchbook.html" class="btn btn-custom btn-lg">Sketchbooks</a>
-        <a href="info.html" class="btn btn-custom btn-lg">Info</a>
-        <a href="contact.html" class="btn btn-custom btn-lg">Contact</a>
-    </div>
+       <!-- Navbar -->
+       <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">RENDERLESS</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="sketchbook.html">Sketchbooks</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="info.html">Info</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
     <!-- End Navbar -->
     
     <div class="image-container row">
@@ -68,7 +93,7 @@
     <div class="containerLeft text-center">
         <div class="container-padding">
             <h3 class="text-white">Contact</h3>
-            <p>For questions, please contact us.</p>
+            <p><a a class="text-white" > For questions, please contact us.</p></a>
             <p><a class="text-white" href="mailto:info@renderless.eu">Send an email to info@renderless.com</a></p>
         </div>
     </div>
