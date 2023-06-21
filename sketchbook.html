@@ -25,69 +25,62 @@
             location.replace(`https:${location.href.substring(location.protocol.length)}`);
         }
     </script>
+    
+    <style>
+        @media (max-width: 767px) {
+            .image-container {
+                flex-direction: column;
+            }
+        }
+    </style>
 </head>
 <body>
     <!-- Rest of your HTML content -->
-</body>
-</html>
-
-
-<body class="text-white ">
     
-	
-
     <video autoplay loop muted>
         <source src="img/Sequence blue_150px.mp4" type="video/mp4">
         Your browser does not support the video tag.
     </video>   
 
-<!-- Navbar-->
-<div class="text-center mt-5">
-	<a class="navbar-brand text-left text-white featurette-heading" href="index.html">RENDERLESS</a>
-	<a href="sketchbook.html" class="btn btn-custom btn-lg">Sketchbooks</a>
-	<a href="info.html" class="btn btn-custom btn-lg">Info</a>
-	<a href="contact.html" class="btn btn-custom btn-lg">Contact</a>
-</div>
-</nav>
-<!--End Navbar-->
-
-
-<div class="image-container">
-    <div class="col-md-5">
-        <a href="architect.html" target="">
-            <img src="img/cover_0001_Layer-1.png" class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto clickable" width="500" height="500" alt="Inspiring modern architecture in water" role="img" aria-label="Inspiring modern architecture in water">
-        </a>
+    <!-- Navbar -->
+    <div class="text-center mt-5">
+        <a class="navbar-brand text-left text-white featurette-heading" href="index.html">RENDERLESS</a>
+        <a href="sketchbook.html" class="btn btn-custom btn-lg">Sketchbooks</a>
+        <a href="info.html" class="btn btn-custom btn-lg">Info</a>
+        <a href="contact.html" class="btn btn-custom btn-lg">Contact</a>
     </div>
-
-    <div class="col-md-5">
-        <a href="urban.html" target="">
-            <img src="img/cover_0000_Layer-2.png" class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" alt="Inspiring urban architecture" role="img" aria-label="Inspiring urban architecture">
-        </a>
+    <!-- End Navbar -->
+    
+    <div class="image-container row">
+        <div class="col-md-5">
+            <a href="architect.html" target="">
+                <img src="img/cover_0001_Layer-1.png" class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto clickable" width="500" height="500" alt="Inspiring modern architecture in water" role="img" aria-label="Inspiring modern architecture in water">
+            </a>
+        </div>
+    
+        <div class="col-md-5">
+            <a href="urban.html" target="">
+                <img src="img/cover_0000_Layer-2.png" class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" alt="Inspiring urban architecture" role="img" aria-label="Inspiring urban architecture">
+            </a>
+        </div>
     </div>
-</div>
-
-
-<div class="containerLeft text-center">
-    <div class="container-padding">
-        <h3 class="text-white">Contact</h3>
-        <p>For questions please contact us.</p>
-        <p><a class="text-white" href="mailto:info@renderless.eu">Send e-mail to info@renderless.com</a></p>
-
+    
+    <div class="containerLeft text-center">
+        <div class="container-padding">
+            <h3 class="text-white">Contact</h3>
+            <p>For questions, please contact us.</p>
+            <p><a class="text-white" href="mailto:info@renderless.eu">Send an email to info@renderless.com</a></p>
+        </div>
     </div>
-
-
-	  
-
-
-
-
-<footer class="footer bg-light py-3">
-	<div class="container">
-	  <span class="text-muted">© RENDERLESS. All rights reserved. <span id="currentYear"></span></span>
-	</div>
-  </footer>
-  
+    
+    <footer class="footer bg-light py-3">
+        <div class="container">
+            <span class="text-muted">© RENDERLESS. All rights reserved. <span id="currentYear"></span></span>
+        </div>
+    </footer>
       
-      
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhaxz3cs3GM6kK41Qp0h16Lh+O/qjwkf5s6d2k0PpEvaB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 </body>
 </html>
