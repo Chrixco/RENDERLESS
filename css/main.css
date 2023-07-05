@@ -429,3 +429,8 @@ html {
 	width: 100%;
   }
   
+
+  video#backgroundVideo::-webkit-media-controls-play-button,
+video#backgroundVideo::-webkit-media-controls-start-playback-button {
+    display: none;
+}
