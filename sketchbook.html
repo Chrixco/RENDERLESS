@@ -48,10 +48,60 @@
     
 	
 
+    <style>
+        #backgroundVideo {
+            display: block;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: -99;
+        }
+    
+        .video-poster {
+            display: none;
+        }
+    
+        @media (max-width: 768px) {
+            #backgroundVideo {
+                display: none;
+            }
+    
+            .video-poster {
+                display: block;
+                position: fixed;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background-image: url('img/video-poster.jpg');
+                background-size: cover;
+                background-position: center;
+                z-index: -99;
+            }
+        }
+    </style>
+    
     <video autoplay loop muted playsinline poster="img/video-poster.jpg" id="backgroundVideo">
         <source src="img/Sequence blue_150px.mp4" type="video/mp4">
         Your browser does not support the video tag.
     </video>
+    
+    <script>
+        window.addEventListener('DOMContentLoaded', function() {
+            var video = document.getElementById('backgroundVideo');
+            var poster = document.createElement('div');
+            poster.className = 'video-poster';
+            video.parentNode.insertBefore(poster, video);
+    
+            if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+                video.style.display = 'none';
+            }
+        });
+    </script>
+    
     
     
     
