@@ -1,28 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- Google tag (gtag.js) -->
+    <script src="https://www.googletagmanager.com/gtag/js?id=G-1TNL03FNTG"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
 
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-1TNL03FNTG"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-1TNL03FNTG');
-</script>
+        gtag('config', 'G-1TNL03FNTG');
+    </script>
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Renderless - Draw more, render less</title>
     <link rel="icon" href="img/icon.png" type="image/png">
-    
+
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    
+
     <!-- Font Awesome CSS -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css">
-
 
     <!-- Custom CSS -->
     <link rel="stylesheet" href="css/main.css">
@@ -30,18 +28,15 @@
     <!-- Meta tags -->
     <meta name="description" content="Welcome to Renderless, a visionary company inspired by a passion for authentic design. Renderless is dedicated to transforming the world of architecture and representation.">
     <meta name="keywords" content="renderless, architecture, design, sketches, creativity">
-    
+
     <!-- Enable HTTPS encryption -->
     <script>
         if (location.protocol !== 'https:') {
             location.replace(`https:${location.href.substring(location.protocol.length)}`);
         }
     </script>
-</head>
-<body class="text-white ">
-    
-	
 
+    <!-- CSS Styles -->
     <style>
         #backgroundVideo {
             display: block;
@@ -53,16 +48,16 @@
             object-fit: cover;
             z-index: -99;
         }
-    
+
         .video-poster {
             display: none;
         }
-    
+
         @media (max-width: 768px) {
             #backgroundVideo {
                 display: none;
             }
-    
+
             .video-poster {
                 display: block;
                 position: fixed;
@@ -77,168 +72,163 @@
             }
         }
     </style>
-    
+</head>
+<body class="text-white">
+
     <video autoplay loop muted playsinline poster="img/fondoazulvideo.png" id="backgroundVideo">
         <source src="img/Sequence blue_150px.mp4" type="video/mp4">
         Your browser does not support the video tag.
     </video>
-    
+
     <script>
         window.addEventListener('DOMContentLoaded', function() {
             var video = document.getElementById('backgroundVideo');
             var poster = document.createElement('div');
             poster.className = 'video-poster';
             video.parentNode.insertBefore(poster, video);
-    
+
             if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
                 video.style.display = 'none';
             }
         });
     </script>
-    
-    
-    
-    
-    
 
-<!-- Navbar-->
-<div class="text-center mt-5">
-	<a class="navbar-brand text-left text-white featurette-heading" href="index.html">RENDERLESS</a>
-	<a href="sketchbook.html" class="btn btn-custom btn-lg">Sketchbooks</a>
-	<a href="info.html" class="btn btn-custom btn-lg">Vision</a>
-	<a href="contact.html" class="btn btn-custom btn-lg">Contact</a>
-</div>
-</nav>
-<!--End Navbar-->
-<!-- START THE FEATURETTES -->
+    <!-- Navbar -->
+    <div class="text-center mt-5">
+        <a class="navbar-brand text-left text-white featurette-heading" href="index.html">RENDERLESS</a>
+        <a href="sketchbook.html" class="btn btn-custom btn-lg">Sketchbooks</a>
+        <a href="info.html" class="btn btn-custom btn-lg">Vision</a>
+        <a href="contact.html" class="btn btn-custom btn-lg">Contact</a>
+    </div>
+    </nav>
+    <!-- End Navbar -->
 
-<hr class="featurette-divider bg-white">
-<div class="row featurette clickable" data-href="sketchbook.html">
-    <div class="col-md-7">
-        <div class="context has-text-centered unstyled">
-            <h2 class="featurette-heading fw-normal lh-1 text-right">
-                <a href="sketchbook.html" class="text-decoration-none text-dark">Welcome.</a>
-            </h2>
-            <p class="lead text-right">Keep drawing, be part of the movement.</p>
+    <!-- Start Featurettes -->
+    <hr class="featurette-divider bg-white">
+    <div class="row featurette clickable" data-href="sketchbook.html">
+        <div class="col-md-7">
+            <div class="context has-text-centered unstyled">
+                <h2 class="featurette-heading fw-normal lh-1 text-right">
+                    <a href="sketchbook.html" class="text-decoration-none text-dark">Welcome.</a>
+                </h2>
+                <p class="lead text-right">Keep drawing, be part of the movement.</p>
+            </div>
+        </div>
+
+        <div class="col-md-5">
+            <a href="sketchbook.html">
+                <img src="img/1080_displacment_white_shirt_black_women.jpg" 
+                    class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto clickable" 
+                    width="500" height="500" alt="Inspiring modern architecture in a water" 
+                    role="img" aria-label="Inspiring modern architecture in a water" 
+                    data-href="sketchbook.html">
+            </a>
         </div>
     </div>
 
-    <div class="col-md-5">
-        <a href="sketchbook.html">
-            <img src="img/1080_displacment_white_shirt_black_women.jpg" 
-                class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto clickable" 
-                width="500" height="500" alt="Inspiring modern architecture in a water" 
-                role="img" aria-label="Inspiring modern architecture in a water" 
-                data-href="sketchbook.html">
-        </a>
-    </div>
-</div>
+    <hr class="featurette-divider bg-white">
+    <div class="row featurette clickable" data-href="info.html">
+        <div class="col-md-7">
+            <div class="context has-text-centered unstyled">
+                <h2 class="featurette-heading fw-normal lh-1 text-right" target="info.html">
+                    <a href="info.html">RENDERLESS</h2></a>
+                <p class="lead text-right">We are more than a company; it's a movement that challenges the status quo of design representation. We aim to cultivate a community of like-minded designers who appreciate the depth and authenticity of hand-drawn sketches. By rendering less and drawing more.</p>
+            </div>
+        </div>
 
-<hr class="featurette-divider bg-white">
-<div class="row featurette clickable" data-href="info.html">
-    <div class="col-md-7">
-        <div class="context has-text-centered unstyled">
-        <h2 class="featurette-heading fw-normal lh-1 text-right" target="info.html">
-            <a href="info.html">RENDERLESS</h2></a>
-        <p class="lead text-right">We are more than a company; it's a movement that challenges the status quo of design representation. We aim to cultivate a community of like-minded designers who appreciate the depth and authenticity of hand-drawn sketches. By rendering less and drawing more.</p>
-
-    </div>
-
-    <div class="col-md-5">
-        <a href="info.html">
-        <img src="img/logo renderless con fondo griss.png" 
-        class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto clickable" 
-        width="500" height="500" alt="Inspiring modern architecture in a water" 
-        role="img" aria-label="Inspiring modern architecture in a water" 
-        data-href="info.html">
-        </a>
-    </div>
-</div>
-  
-
-
-<hr class="featurette-divider bg-white">
-<div class="row featurette clickable" data-href="architect.html">
-    <div class="col-md-7">
-        <div class="context has-text-centered unstyled">
-        <h2 class="featurette-heading fw-normal lh-1 text-right" target="architect.html">
-            <a href="architect.html">The Architect: Sketchbook</h2></a>
-        <p class="lead text-right">
-            Capture brilliance with "The Architect: Sketchbook." A trusted companion, it shapes fragments of inspiration into architectural marvels. Embrace simplicity and beauty as each stroke unveils introspection. Elevate expression, embrace creation, and let this sketchbook guide your journey. Witness ideas soar, shaping a legacy of brilliance.
-        </p>
-
-    </div>
-
-
-    <div class="col-md-5">
-        <a href="architect.html">
-        <img src="img/cover_0001_Layer-1.png" 
-        class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto clickable" 
-        width="500" height="500" alt="Inspiring modern architecture in a water" 
-        role="img" aria-label="Inspiring modern architecture in a water" 
-        data-href="architect.html">
-        </a>
-    </div>
-</div>
-<!-- /END THE FEATURETTES -->
-
-
-<!-- START THE FEATURETTES -->
-<hr class="featurette-divider bg-white">
-<div class="row featurette clickable" data-href="urban.html">
-    <div class="col-md-7">
-        <div class="context has-text-centered unstyled">
-        <h2 class="featurette-heading fw-normal lh-1 text-right" target="urban.html">
-            <a href="urban.html">The Urbanist: Sketchbook</h2></a>
-        <p class="lead text-right">
-            "The Urbanist: Sketchbook" is your trusted accomplice, capturing inspiration for architects and urbanists alike. Its meticulously crafted design reflects your unique style and creative flair. Immerse yourself in a world where simplicity meets beauty, where each stroke unveils architectural and urban brilliance. Elevate your expression, embrace creation, and let this sketchbook guide your journey.</p>
-
-    </div>
-
-
-    <div class="col-md-5">
-        <a href="urban.html">
-        <img src="img/cover_0000_Layer-2.png" 
-        class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto clickable" 
-        width="500" height="500" alt="Inspiring modern architecture in a water" 
-        role="img" aria-label="Inspiring modern architecture in a water" 
-        data-href="urbanist.html">
-        </a>
-    </div>
-</div>
-<!-- /END THE FEATURETTES -->
-
-<div class="containerLeft text-center">
-    <div class="container-padding">
-        <h3 class="text-white">Contact</h3>
-        <p>For questions please contact us.</p>
-        <p><a class="text-white" href="mailto:info@renderless.eu">Send e-mail to info@renderless.eu</a></p>
-
-    </div>
-
-	<!--
-	<div class="container">
-        <div class="social-media text-center mt-5">
-            <a href="#" class="text-white me-3"><i class="fab fa-facebook"></i></a>
-            <a href="#" class="text-white me-3"><i class="fab fa-twitter"></i></a>
-            <a href="#" class="text-white me-3"><i class="fab fa-instagram"></i></a>
-            <a href="#" class="text-white me-3"><i class="fab fa-linkedin"></i></a>
-            <a href="#" class="text-white"><i class="fab fa-youtube"></i></a>
+        <div class="col-md-5">
+            <a href="info.html">
+                <img src="img/logo renderless con fondo griss.png" 
+                    class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto clickable" 
+                    width="500" height="500" alt="Inspiring modern architecture in a water" 
+                    role="img" aria-label="Inspiring modern architecture in a water" 
+                    data-href="info.html">
+            </a>
         </div>
     </div>
-   
--->
-    
-    <footer class="footer bg-light py-3">
+
+    <hr class="featurette-divider bg-white">
+    <div class="row featurette clickable" data-href="architect.html">
+        <div class="col-md-7">
+            <div class="context has-text-centered unstyled">
+                <h2 class="featurette-heading fw-normal lh-1 text-right" target="architect.html">
+                    <a href="architect.html">The Architect: Sketchbook</h2></a>
+                <p class="lead text-right">
+                    Capture brilliance with "The Architect: Sketchbook." A trusted companion, it shapes fragments of inspiration into architectural marvels. Embrace simplicity and beauty aseach stroke unveils introspection. Elevate expression, embrace creation, and let this sketchbook guide your journey. Witness ideas soar, shaping a legacy of brilliance.
+                </p>
+            </div>
+        </div>
+
+        <div class="col-md-5">
+            <a href="architect.html">
+                <img src="img/cover_0001_Layer-1.png" 
+                    class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto clickable" 
+                    width="500" height="500" alt="Inspiring modern architecture in a water" 
+                    role="img" aria-label="Inspiring modern architecture in a water" 
+                    data-href="architect.html">
+            </a>
+        </div>
+    </div>
+    <!-- /END THE FEATURETTES -->
+
+    <!-- Start the Featurettes -->
+    <hr class="featurette-divider bg-white">
+    <div class="row featurette clickable" data-href="urban.html">
+        <div class="col-md-7">
+            <div class="context has-text-centered unstyled">
+                <h2 class="featurette-heading fw-normal lh-1 text-right" target="urban.html">
+                    <a href="urban.html">The Urbanist: Sketchbook</h2></a>
+                <p class="lead text-right">
+                    "The Urbanist: Sketchbook" is your trusted accomplice, capturing inspiration for architects and urbanists alike. Its meticulously crafted design reflects your unique style and creative flair. Immerse yourself in a world where simplicity meets beauty, where each stroke unveils architectural and urban brilliance. Elevate your expression, embrace creation, and let this sketchbook guide your journey.
+                </p>
+            </div>
+        </div>
+
+        <div class="col-md-5">
+            <a href="urban.html">
+                <img src="img/cover_0000_Layer-2.png" 
+                    class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto clickable" 
+                    width="500" height="500" alt="Inspiring modern architecture in a water" 
+                    role="img" aria-label="Inspiring modern architecture in a water" 
+                    data-href="urbanist.html">
+            </a>
+        </div>
+    </div>
+    <!-- /END THE FEATURETTES -->
+
+    <div class="containerLeft text-center">
+        <div class="container-padding">
+            <h3 class="text-white">Contact</h3>
+            <p>For questions, please contact us.</p>
+            <p><a class="text-white" href="mailto:info@renderless.eu">Send an email to info@renderless.eu</a></p>
+        </div>
+
+        <!--
         <div class="container">
-          <span class="text-muted">© RENDERLESS. All rights reserved. <span id="currentYear"></span></span>
+            <div class="social-media text-center mt-5">
+                <a href="#" class="text-white me-3"><i class="fab fa-facebook"></i></a>
+                <a href="#" class="text-white me-3"><i class="fab fa-twitter"></i></a>
+                <a href="#" class="text-white me-3"><i class="fab fa-instagram"></i></a>
+                <a href="#" class="text-white me-3"><i class="fab fa-linkedin"></i></a>
+                <a href="#" class="text-white"><i class="fab fa-youtube"></i></a>
+            </div>
         </div>
-      </footer>
-      
-      <script>
-        document.getElementById("currentYear").innerHTML = new Date().getFullYear();
-      </script>
-      
-      
+        -->
+
+        <footer class="footer bg-light py-3">
+            <div class="container">
+                <span class="text-muted">© RENDERLESS. All rights reserved. <span id="currentYear"></span></span>
+            </div>
+        </footer>
+
+        <script>
+            document.getElementById("currentYear").innerHTML = new Date().getFullYear();
+        </script>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KyZXEAg3QhqLMpG8r+MnEe5JgsE2lAjoRV9xSfPXaL8x0pB8DbfkzFtN0jc5z4nP" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 </body>
 </html>
