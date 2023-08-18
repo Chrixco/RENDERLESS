@@ -377,11 +377,11 @@ html {
 }
 
 .grid-image {
-    width: 200px;
-    height: 200px;
+    width: 250px;
+    height: 250px;
     object-fit: cover;
     cursor: pointer;
-    margin: 10px;  /* Adjust this value as needed for spacing between images */
+    margin: 5px;  /* Adjust this value as needed for spacing between images */
 }
 
 .image-text-grid {
