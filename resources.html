@@ -1,19 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-V43JNW54M3"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-V43JNW54M3"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
 
-        function gtag() {
-            dataLayer.push(arguments);
-        }
-        gtag('js', new Date());
-
-        gtag('config', 'G-V43JNW54M3');
-    </script>
+  gtag('config', 'G-V43JNW54M3');
+</script>
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -21,8 +17,8 @@
     <link rel="icon" href="img/icon.png" type="image/png">
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
-        crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" crossorigin="anonymous">
+
 
     <!-- Font Awesome CSS -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css">
@@ -31,10 +27,8 @@
     <link rel="stylesheet" href="css/main.css">
 
     <!-- Meta tags -->
-    <meta name="description"
-        content="Welcome to Renderless, a visionary company inspired by a passion for authentic design. Renderless is dedicated to transforming the world of architecture and representation.">
-    <meta name="keywords"
-        content="renderless, architecture sketchbook, the architect sketch book, the urbanist sketchbook, sketchbook, art movement you, sketches, creativity, draw more render less">
+    <meta name="description" content="Welcome to Renderless, a visionary company inspired by a passion for authentic design. Renderless is dedicated to transforming the world of architecture and representation.">
+    <meta name="keywords" content="renderless, architecture sketchbook, the architect sketch book, the urbanist sketchbook, sketchbook, art movement you, sketches, creativity, draw more render less">
 
     <!-- Enable HTTPS encryption -->
     <script>
@@ -43,6 +37,7 @@
         }
     </script>
 
+    <!-- CSS Styles -->
     <style>
         #backgroundVideo {
             display: block;
@@ -77,29 +72,8 @@
                 z-index: -99;
             }
         }
-
-        .image-text-grid {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-between;
-            padding: 20px;
-        }
-
-        .image-text-item {
-            flex-basis: calc(25% - 20px); /* 25% for 4 items, minus 20px for margins */
-            margin: 10px;
-            text-align: center;
-        }
-
-        .image-text-item img {
-            width: 200px;
-            height: 200px;
-            object-fit: cover;
-            cursor: pointer;
-        }
     </style>
 </head>
-
 <body class="text-white">
 
     <video autoplay loop muted playsinline poster="img/fondoazulvideo.png" id="backgroundVideo">
@@ -108,7 +82,7 @@
     </video>
 
     <script>
-        window.addEventListener('DOMContentLoaded', function () {
+        window.addEventListener('DOMContentLoaded', function() {
             var video = document.getElementById('backgroundVideo');
             var poster = document.createElement('div');
             poster.className = 'video-poster';
@@ -129,46 +103,31 @@
         <a href="resources.html" class="btn btn-custom btn-lg">Free Resources</a>
         <a href="contact.html" class="btn btn-custom btn-lg">Contact</a>
     </div>
+    </nav>
     <!-- End Navbar -->
 
- <!-- Image and Text Grid -->
+<!-- START THE FEATURETTES -->
 <hr class="featurette-divider bg-white">
-<div class="containerCenter">
-    <h2>The Architect: Sketchbook</h2>
-</div>
 
 <div class="containerCenter"></div>
     <div class="align-content-center">
     <div class="image-container row">
         <div class="col-md-3">
-            <a href="https://www.amazon.de/-/en/Christian-Corral/dp/B0C7TCGTZZ/ref=sr_1_1?crid=1WRR5QST7V66C&keywords=the+architect+sketchbook&qid=1687262963&sprefix=the+architect+sketchbook%2Caps%2C79&sr=8-1" target="_blank">
-                <img src="img/dotted grid arq Large.jpeg" class="responsive-image bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto clickable" width="800" height="800" alt="Inspiring modern architecture in water" role="img" aria-label="Inspiring modern architecture in water">
+            <a href="https://l.instagram.com/?u=https%3A%2F%2Fdrive.google.com%2Fdrive%2Ffolders%2F1V18z1DTViucJGytw0tsulk1vCpTfk0rd&e=AT0qwPOMRpA8JhkXvXtglLhrsO0hWotOwCA7zfSpT96CpPfzbPC0ppcGdLHwMmDHIrntz8E8NWQwDPS-Cvg0xIvK024BgyjBaM_k7Ug" target="_blank">
+                <img src="img/Artboard 7 Large.jpeg" class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto clickable" width="500" height="500" alt="Inspiring modern architecture in water" role="img" aria-label="Inspiring modern architecture in water">
             </a>
         </div>
-
-        <div class="col-md-3">
-            <a href="https://www.amazon.de/dp/B0C81HBD5C" target="">
-                <img src="img/blank arq Large.jpeg" class="responsive-image bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="800" height="800" alt="Inspiring urban architecture" role="img" aria-label="Inspiring urban architecture">
-            </a>
-        </div>
-        
-        <div class="containerCenter">
-            <hr class="featurette-divider bg-white">
-
-        <p>Hard and softcover
-            Dotted and blank paper: 120 high-quality pages, measuring 15.24 x 22.86 cm (6" x 9"), this sketchbook offers a comfortable and portable canvas for artistic ideas
-            Scale table: Incorporate precise measurements and scale into your sketches.
-            Hatching techniques: Enhance depth and texture with a variety of hatching techniques.
-            People representations: Bring your architectural visions to life with vibrant and engaging characters.
-            Tree representations: Add natural beauty with a diverse collection of trees</p></div>
-
     </div>
+
+   
+
+ <!-- /END THE FEATURETTES -->
 
     <div class="containerLeft text-center">
         <div class="container-padding">
             <h3 class="text-white">Contact</h3>
-            <p>For questions please contact us.</p>
-            <p><a class="text-white" href="mailto:info@renderless.eu">Send e-mail to info@renderless.eu</a></p>
+            <p>For questions, please contact us.</p>
+            <p><a class="text-white" href="mailto:info@renderless.eu">Send an email to info@renderless.eu</a></p>
         </div>
 
         <footer class="footer bg-light py-3">
@@ -180,9 +139,14 @@
         <script>
             document.getElementById("currentYear").innerHTML = new Date().getFullYear();
         </script>
-
     </div>
 
-</body>
+    <!-- Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KyZXEAg3QhqLMpG8r+MnEe5JgsE2lAjoRV9xSfPXaL8x0pB8DbfkzFtN0jc5z4nP" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 
+    
+
+</body>
 </html>

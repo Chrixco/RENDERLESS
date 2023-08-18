@@ -368,6 +368,69 @@ html {
 	height: auto;
 	cursor: pointer;
   }
+
+  .image-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 20px;  /* Adjust this value as needed for the container padding */
+}
+
+.grid-image {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    cursor: pointer;
+    margin: 10px;  /* Adjust this value as needed for spacing between images */
+}
+
+.image-text-grid {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    min-height: 100vh;
+}
+
+.image-text-item {
+    display: flex;
+    flex-direction: column;  /* Stack the child elements vertically */
+    align-items: center;     /* Center the children horizontally */
+    flex-basis: calc(25% - 20px);
+    margin: 10px;
+    text-align: center;
+}
+
+.image-text-item img {
+    margin-bottom: 20px;  /* Adds some space between the image and the text */
+}
+
+.responsive-image{
+    width: 100%;
+    max-width: 800px;  /* The maximum width you set in the img tag */
+    height: auto;  /* This maintains the aspect ratio */
+}
+
+
+
+
+.fullscreen-view {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.7);
+    justify-content: center;
+    align-items: center;
+}
+
+#fullscreen-image {
+    max-width: 90%;
+    max-height: 90%;
+}
+
   
   .modal-container {
 	display: none;

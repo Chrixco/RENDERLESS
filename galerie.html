@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-V43JNW54M3"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-V43JNW54M3');
+</script>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Renderless - Draw more, render less</title>
+    <link rel="icon" href="img/icon.png" type="image/png">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" crossorigin="anonymous">
+
+
+    <!-- Font Awesome CSS -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/main.css">
+
+    <!-- Meta tags -->
+    <meta name="description" content="Welcome to Renderless, a visionary company inspired by a passion for authentic design. Renderless is dedicated to transforming the world of architecture and representation.">
+    <meta name="keywords" content="renderless, architecture sketchbook, the architect sketch book, the urbanist sketchbook, sketchbook, art movement you, sketches, creativity, draw more render less">
+
+    <!-- Enable HTTPS encryption -->
+    <script>
+        if (location.protocol !== 'https:') {
+            location.replace(`https:${location.href.substring(location.protocol.length)}`);
+        }
+    </script>
+
+    <!-- CSS Styles -->
+    <style>
+        #backgroundVideo {
+            display: block;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: -99;
+        }
+
+        .video-poster {
+            display: none;
+        }
+
+        @media (max-width: 768px) {
+            #backgroundVideo {
+                display: none;
+            }
+
+            .video-poster {
+                display: block;
+                position: fixed;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background-image: url('img/fondoazulvideo.png');
+                background-size: cover;
+                background-position: center;
+                z-index: -99;
+            }
+        }
+    </style>
+</head>
+<body class="text-white">
+
+    <video autoplay loop muted playsinline poster="img/fondoazulvideo.png" id="backgroundVideo">
+        <source src="img/Sequence blue_150px.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+
+    <script>
+        window.addEventListener('DOMContentLoaded', function() {
+            var video = document.getElementById('backgroundVideo');
+            var poster = document.createElement('div');
+            poster.className = 'video-poster';
+            video.parentNode.insertBefore(poster, video);
+
+            if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+                video.style.display = 'none';
+            }
+        });
+    </script>
+
+    <!-- Navbar -->
+    <div class="text-center mt-5">
+        <a class="navbar-brand text-left text-white featurette-heading" href="index.html">RENDERLESS</a>
+        <a href="sketchbook.html" class="btn btn-custom btn-lg">Sketchbooks</a>
+        <a href="info.html" class="btn btn-custom btn-lg">Vision</a>
+        <a href="galerie.html" class="btn btn-custom btn-lg">Galerie</a>
+        <a href="resources.html" class="btn btn-custom btn-lg">Free Resources</a>
+        <a href="contact.html" class="btn btn-custom btn-lg">Contact</a>
+    </div>
+    </nav>
+    <!-- End Navbar -->
+
+<!-- START THE FEATURETTES -->
+<hr class="featurette-divider bg-white">
+
+<!-- Image Grid -->
+<div class="image-grid">
+    <!-- Sample images, you can add as many as you like -->
+    <img src="img/1.png" class="grid-image" onclick="expandImage(this)">
+    <img src="img/1@300x-100.jpg" class="grid-image" onclick="expandImage(this)">
+    <img src="img/4@300x-100.jpg" class="grid-image" onclick="expandImage(this)">
+    <img src="img/3@300x-100.jpg" class="grid-image" onclick="expandImage(this)">
+    <img src="img/2@300x-100.jpg" class="grid-image" onclick="expandImage(this)">
+    <img src="img/cafe y libro.JPG" class="grid-image" onclick="expandImage(this)">
+    <img src="img/poster 1.jpeg" class="grid-image" onclick="expandImage(this)">
+    <img src="img/madera marco.jpeg" class="grid-image" onclick="expandImage(this)">
+    <img src="img/archicolombiapenciltint.jpeg" class="grid-image" onclick="expandImage(this)">
+    <img src="img/poster 2.jpeg" class="grid-image" onclick="expandImage(this)">
+    <img src="img/libro abierto.png" class="grid-image" onclick="expandImage(this)">
+    <img src="img/womensworkingrenderless.jpeg" class="grid-image" onclick="expandImage(this)">
+    <img src="img/interiorurbanistBookmontage5000px Large.jpeg" class="grid-image" onclick="expandImage(this)">
+    <img src="img/archpenciltint.jpeg" class="grid-image" onclick="expandImage(this)">
+    <img src="img/interiorarchitectBookmontage_square.png" class="grid-image" onclick="expandImage(this)">
+
+
+
+
+
+    <!-- Add more images as needed -->
+</div>
+
+<!-- Full Screen Image View -->
+<div class="fullscreen-view" onclick="closeFullscreen()">
+    <img id="fullscreen-image" src="">
+</div>
+
+   
+
+ <!-- /END THE FEATURETTES -->
+
+    <div class="containerLeft text-center">
+        <div class="container-padding">
+            <h3 class="text-white">Contact</h3>
+            <p>For questions, please contact us.</p>
+            <p><a class="text-white" href="mailto:info@renderless.eu">Send an email to info@renderless.eu</a></p>
+        </div>
+
+        <footer class="footer bg-light py-3">
+            <div class="container">
+                <span class="text-muted">© RENDERLESS. All rights reserved. <span id="currentYear"></span></span>
+            </div>
+        </footer>
+
+        <script>
+            document.getElementById("currentYear").innerHTML = new Date().getFullYear();
+        </script>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KyZXEAg3QhqLMpG8r+MnEe5JgsE2lAjoRV9xSfPXaL8x0pB8DbfkzFtN0jc5z4nP" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+    function expandImage(imgElement) {
+        document.querySelector('.fullscreen-view').style.display = 'flex';
+        document.getElementById('fullscreen-image').src = imgElement.src;
+    }
+    
+    function closeFullscreen() {
+        document.querySelector('.fullscreen-view').style.display = 'none';
+    }
+    
+
+</body>
+</html>
