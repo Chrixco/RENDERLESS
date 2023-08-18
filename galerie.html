@@ -158,8 +158,31 @@
         </footer>
 
         <script>
-            document.getElementById("currentYear").innerHTML = new Date().getFullYear();
+            // Function to set the current year in an element
+            function setCurrentYear() {
+                const currentYear = new Date().getFullYear();
+                document.getElementById("currentYear").textContent = currentYear;
+            }
+        
+            // Function to expand an image for a fullscreen view
+            function expandImage(imgElement) {
+                const fullscreenView = document.querySelector('.fullscreen-view');
+                const fullscreenImage = document.getElementById('fullscreen-image');
+        
+                fullscreenView.style.display = 'flex';
+                fullscreenImage.src = imgElement.src;
+            }
+        
+            // Function to close the fullscreen image view
+            function closeFullscreen() {
+                const fullscreenView = document.querySelector('.fullscreen-view');
+                fullscreenView.style.display = 'none';
+            }
+        
+            // Set the current year on page load
+            document.addEventListener('DOMContentLoaded', setCurrentYear);
         </script>
+        
     </div>
 
     <!-- Bootstrap JS -->
@@ -167,14 +190,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 
-    function expandImage(imgElement) {
-        document.querySelector('.fullscreen-view').style.display = 'flex';
-        document.getElementById('fullscreen-image').src = imgElement.src;
-    }
     
-    function closeFullscreen() {
-        document.querySelector('.fullscreen-view').style.display = 'none';
-    }
     
 
 </body>
